@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="OnlineShoppingWebApp.Admin.AdminMaster" %>
+
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+   
+</head>
+<body>
+    <form id="form2" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <asp:UpdatePanel ID="AdminUpdatePanel" runat="server">
+        <ContentTemplate>
+            <table align="center" style="width: 900px;">
+                <tr>
+                    <td>
+                        <table align="center" style="border-bottom-style: ridge; border-width:medium; width:900px; border-color:#9933FF">
+                            <tr>
+                                <td align="center">
+                                    <asp:Image ID="Image1" runat="server" Height="67px" ImageUrl="~/Images/ShoppingCartProject.png"
+                                        width="57px" />
+                                    &nbsp;
+                                </td>
+                                <td>
+                                    <asp:LinkButton ID="lblLogo" runat="server" Text="OnlineShopping" Font-Names="Eras Demi ITC"
+                                        Font-Size="20pt" ForeColor="#6600CC"></asp:LinkButton>
+                                    <br />
+                                    Buy for better life!
+                                </td>
+                                <td align="center">
+                                    <asp:Image ID="Image2" runat="server" Height="81px" ImageUrl="~/Images/icon_admin.png"
+                                        width="109px" />
+                                </td>
+
+                                <td valign="top">
+                                    <asp:LinkButton ID="btnLogout" runat="server" Font-Underline="true" Font-Size="15pt"
+                                        ForeColor="Blue" OnClick="btnLogout_Click">Logout</asp:LinkButton>
+                                </td>
+
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table align="center" style="border: thin ridge #9900FF; width: 900px;">
+                            <tr>
+                                <td class="style2">
+                                    <a href="AddEditCategory.aspx">AddCategory</a>&nbsp; <a href="AddNewProducts.aspx">AddProducts</a>
+                                    &nbsp;<a href="Category.aspx">AllCategory</a>&nbsp; <a href="Products.aspx">AllProducts</a>
+                                    &nbsp;<a href="CustomerOrders.aspx">CustomerOrders</a>&nbsp;
+                                    <a href="ProductStock.aspx">ProductStock</a>&nbsp;
+                                    <a href="IncomeReport.aspx">IncomeReport</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table align="center" style="border: 1px ridge #000000; width: 900px;">
+                            <tr>
+                                <td class="style2" valign="top">
+                                    <asp:Panel ID="pnlCategories" runat="server">
+                                        <asp:ContentPlaceHolder ID="ContectPlaceHolder1" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </asp:Panel>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                 </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        &nbsp;&copy;Copyright 2016 By Mahfuz
+                    </td>
+                </tr>
+            </table>
+        </ContentTemplate>
+    </asp:UpdatePanel>
+    
+    </form>
+</body>
+</html>
