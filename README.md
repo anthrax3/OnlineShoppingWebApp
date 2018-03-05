@@ -7,3 +7,6 @@ A user can search and view items from the online store. Only a registered user c
 #
 
 Administrator of the web shop can add, edit and delete products from the store. He can update and remove a registered customer’s information. As well, all the orders made by the customers will be available to the admin. Admin can update shipping information. Item stock and sale report will be shown to the admin.
+#
+
+Published here: http://urn.fi/URN:NBN:fi:amk-201705219220 
