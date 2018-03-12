@@ -42,8 +42,8 @@ namespace OnlineShoppingWebApp.BusinessLayer
         //Replace <Your API Password> with your API Password
         //Replace <Your Signature> with your Signature
         public string APIUsername = "mahfuzul.haq-facilitator_api1.hotmail.com";
-        private string APIPassword = "K4VM62RJGCR3CCS9";
-        private string APISignature = "AFcWxV21C7fd0v3bYYYRCpSSRl31AL3MGsrjQtK19wrID7nUmkvPCIP0";
+        private string APIPassword = "####################";
+        private string APISignature = "##########################";
         private string Subject = "";
         private string BNCode = "PP-ECWizard";
 
